@@ -1,33 +1,8 @@
-
-
-//==========================================================
-// Table of contents
-// <overview>
-// <includes>
-// struct sScalarVariable
-// class cDump
-//==========================================================
-//<overview>
-//==========================================================
-//cDump is a cSimModule that contains the code to start/stop
-//dump of c variables into FSDB Database.It provides higher
-//level api's/macros to specify a cDump variable.
-//cDump supports the following datatypes
-//1) int8,in16,int32,int64
-//2) bool
-//3) char
-//4) float, double
-//5) 1Dimention of all the above data types
-//===========================================================
-//<includes>
-//===========================================================
-
 #ifndef __CDUMP_DEFINED__
 #define __CDUMP_DEFINED__
 
-#include "env_sim.h"
 #include "ffwAPI.h"
-#include "env_msg.h"
+#include "simModule.h"
 #include <string.h>
 #include <vector>
 #include <string>
@@ -78,7 +53,7 @@ struct sScalarVariable {
 typedef struct sScalarVariable sScalarVariable;
 
 //====================================================
-class cDump : public cSimModule {
+class cDump {
 //====================================================
   static cDump  *singleton;
   string fname;
