@@ -20,4 +20,4 @@ This utility can dump your C/C++ variables into FSDB. The advantage is that one 
 ```
 
 ## Example
-The code was plucked out of existing code. I haven't have opportunity to create a working example. I would be very happy if one if you could do it. Let me know if you need further information.
+The code was plucked out of existing code. I haven't had the opportunity to create a working example. I would be very happy you could do it. Let me know if you need further support from me...
